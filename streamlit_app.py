@@ -11,11 +11,17 @@ from datetime import datetime
 """
 
 start_time = st.slider(
-    "When do you start?",
+    "Start time for query",
     value=datetime(2020, 1, 1, 9, 30),
     format="MM/DD/YY - hh:mm",
 )
 st.write("Start time:", start_time)
+end_time = st.slider(
+    "End time for query?",
+    value=datetime(2020, 1, 1, 9, 30),
+    format="MM/DD/YY - hh:mm",
+)
+st.write("End time:", end_time)
 
 num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
 num_turns = st.slider("Number of turns in spiral", 1, 300, 31)
