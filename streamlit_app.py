@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import taospy
-import taospyws
 
 """
 # Welcome to Streamlit!
