@@ -1,4 +1,4 @@
-import altair as alt
+dimport altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -13,8 +13,8 @@ start_date = st.date_input("Enter the start date:", value="default_value_today")
 start_time = st.time_input("Enter the start time:", value="now")
 st.write("Start date:", start_date)
 st.write("Start time:", start_time)
-end_date = st.date_input("Enter the start date:", value="default_value_today")
-end_time = st.time_input("Enter the start time:", value="now")
+end_date = st.date_input("Enter the end date:", value="default_value_today")
+end_time = st.time_input("Enter the end time:", value="now")
 st.write("End date:", end_date)
 st.write("End time:", end_time)
 
