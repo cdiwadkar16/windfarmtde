@@ -9,18 +9,13 @@ from datetime import datetime
 """
 # Renewable Energy Example
 """
-
-start_time = st.slider(
-    "Start time for query",
-    value=datetime(2020, 1, 1, 9, 30),
-    format="MM/DD/YY - hh:mm",
-)
+start_date = st.date_input("Enter the start date:", value="default_value_today")
+start_time = st.time_input("Enter the start time:", value="now")
+st.write("Start date:", start_date)
 st.write("Start time:", start_time)
-end_time = st.slider(
-    "End time for query?",
-    value=datetime(2020, 1, 1, 9, 30),
-    format="MM/DD/YY - hh:mm",
-)
+end_date = st.date_input("Enter the start date:", value="default_value_today")
+end_time = st.time_input("Enter the start time:", value="now")
+st.write("End date:", end_date)
 st.write("End time:", end_time)
 
 num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
